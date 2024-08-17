@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Aniket Mhatre Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+	<link rel="icon" href="aniket.ico"/>
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	
+
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #0eda22;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+
+
+  </head>
+
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	
+	 <div class="preloader">
+        <video src="images/preloader.mp4" autoplay muted loop></video>
+    </div>
+	  
+	  <div id="portfolio" style="display: none;">
+		<!-- Your portfolio content goes here -->
+	  </div>
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html"></a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Education</span></a></li>
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+			  <li class="nav-item"><a href="#certificates-section" class="nav-link"><span>Certificates</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+			  
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		<div class="home-slider owl-carousel">
+			<div class="slider-item">
+				<div class="overlay"></div>
+				<div>
+					<div class="col d-md-flex no-gutters slider-text align-items-center justify-content-center"
+					style="flex-direction: row-reverse; gap:10rem;" data-scrollax-parent="true">
+						<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/aniket.jpg);">
+							<div class="overlay"></div>
+						</div>
+						
+						<div class="" data-scrollax="properties: { translateY: '70%' }">
+							<div class="text text-left">
+								<span class="subheading">Heyyyyy Everyone !!!</span>
+								<h1 class="mb-4 mt-3">Myself <span class="highlight">Aniket Mhatre</span></h1>
+	
+								<!-- Element to contain animated typing -->
+								<span id="typing-animation"></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+
+<script>
+const typingAnimationElement = document.getElementById('typing-animation');
+
+const typingTexts = [
+  'Computer Engineer',
+  'Web Developer',
+  'Android Developer',
+];
+
+let typingIndex = 0;
+let charIndex = 0;
+
+function typeText() {
+  if (charIndex < typingTexts[typingIndex].length) {
+    typingAnimationElement.textContent += typingTexts[typingIndex].charAt(charIndex);
+    charIndex++;
+    setTimeout(typeText, 100);
+  } else {
+    setTimeout(deleteText, 50); // Delay before deleting the text
+  }
+}
+
+function deleteText() {
+  if (charIndex > 0) {
+    typingAnimationElement.textContent = typingAnimationElement.textContent.slice(0, -1);
+    charIndex--;
+    setTimeout(deleteText, 100);
+  } else {
+    typingIndex = (typingIndex + 1) % typingTexts.length;
+    setTimeout(typeText, 100);
+  }
+}
+
+typeText();
+</script>
+
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+
+
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								
+								<h1 class="big">About</h1>
+								<h2 class="color-white">About Me</h2>
+								
+								<p class="color-white text-justify">
+									Hello! I'm Aniket Mhatre 👨‍💻, a 21-year-old fourth-year Computer Engineering student at Pillai HOC College of Engineering and Technology, Rasayani. With a strong foundation in computer science principles and hands-on experience in various projects and internships, I am passionate about leveraging my knowledge and skills to make a meaningful impact on the world. I have a strong interest in Web Development 🌐, Android App Development 📱, UI/UX Design 🎨, Data Visualization 📊, and Artificial Intelligence 🤖. My journey in computer engineering has allowed me to explore and master these fields, equipping me with the tools to create innovative solutions. I use a variety of tools, including Figma 🎨, Visual Studio Code 💻, GitHub 🐱, Android Studio 🛠️, Python 🐍, TensorFlow 🔣, Keras 🔗, PyTorch 🔥. I am always eager to learn and adopt new technologies, continuously improving my skill set to stay updated with industry trends. My passion lies in creating user-centric applications and leveraging AI to solve real-world problems.
+								  </p>
+								  
+								
+							</div>
+						</div>
+
+
+						
+					</div>
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+									  <div class="about-img">
+									
+									  </div>
+									</div>
+									<!-- Details next to profile image -->
+									<div class="col-sm-6 col-md-7">
+									  
+									</div>
+								</div>
+
+								<div class="marquee-wrapper">
+									<div class="skill-mf">
+
+										<div class="marquee-wrapper">
+											<div class="skill-mf">
+						
+										  
+											  <!-- Row 1 -->
+											  <div class="skill-row">
+												<div class="skill-item">
+												  <img src="./images/android-studio-icon.png" class="skill-img">
+												</div>
+												<div class="skill-item">
+												  <img src="./images/python-logo-only.png" class="skill-img">
+												</div>
+												<div class="skill-item">
+												  <img src="./images/css-icon.png" class="skill-img">
+												</div>
+											  </div>
+										  
+											  <!-- Row 2 -->
+											  <div class="skill-row">
+												<div class="skill-item">
+												  <img src="./images/html-icon.png" class="skill-img">
+												</div>
+												<div class="skill-item">
+												  <img src="./images/c-plus-plus-programming-language-icon.png" class="skill-img">
+												</div>
+												<div class="skill-item">
+												  <img src="./images/figma-icon.png" class="skill-img">
+												</div>
+											  </div>
+										  
+											  <!-- Row 3 -->
+											  <div class="skill-row">
+												<div class="skill-item">
+												  <img src="./images/javascript-programming-language-icon.png" class="skill-img">
+												</div>
+												<div class="skill-item">
+												  <img src="./images/kotlin-programming-language-icon.png" class="skill-img">
+												</div>
+												<div class="skill-item">
+												  <img src="./images/mysql-icon.png" class="skill-img">
+												</div>
+											  </div>
+										  
+											  <!-- Row 4 -->
+											  <div class="skill-row">
+												<div class="skill-item">
+												  <img src="./images/mongodb-icon.png" class="skill-img">
+												</div>
+												<div class="skill-item">
+												  <img src="./images/git-icon.png" class="skill-img">
+												</div>
+												<div class="skill-item">
+												  <img src="./images/google-tensorflow-icon.png" class="skill-img">
+												</div>
+											  </div>
+										  
+											</div>
+										  </div>
+										  
+									</div>
+								  </div>
+								  
+								  
+							</div>
+						</div>
+					</div>
+					
+					
+				</div>
+			</div>
+		</div>
+    </section>
+
+
+
+	
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Education</h1>
+          </div>
+        </div>
+		<br>
+		<br>
+		<div class="row">
+			<h1 class="color-white"></h1>
+			<h1 class="big-4" >Education</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+		<div class="row">
+			<div class="col-md-6">
+				<div class="resume-wrap ftco-animate">
+					<span class="date">2022-2025</span>
+					<h2 class="color-white">BACHELOR OF ENGINEERING</h2>
+					<span class="position">PILLAI HOC COLLEGE OF ENGINEERING AND TECHNOLOGY , RASAYANI . </span>
+					<p class="mt-4 color-white">CGPI : 8.2 </p>
+				</div>
+			</div>
+
+			<div class="col-md-6">
+				<div class="resume-wrap ftco-animate">
+					<span class="date">2020-2022</span>
+					<h2 class="color-white"> Diploma in Computer Engineering </h2>
+					<span class="position">PILLAI HOC COLLEGE OF ENGINEERING AND TECHNOLOGY , RASAYANI .</span>
+					<p class="color-white">PERCENTAGE : 83.43% </p>
+				</div>
+			</div>
+
+			<div class="col-md-6">
+				<div class="resume-wrap ftco-animate">
+					<span class="date">2019-2020</span>
+					<h2 class="color-white">HSC </h2>
+					<span class="position">RMV Jr. COLLEGE , AWARE.</span>
+					<p class="color-white">RANK : 1  (COMPUTER SCIENCE)</p>
+					<p class="color-white">PERCENTAGE : 70.46 %</p>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="resume-wrap ftco-animate">
+					<span class="date">2017-2018</span>
+					<h2 class="color-white">SSC </h2>
+					<span class="position">PUNDALIK RAMA PATIL ENGLISH MEDIUM SCHOOL, PANDIVE .</span>
+					<p class="color-white">GRADE : DISTINCTION </p>
+				</div>
+			</div>
+			
+			
+		</div>
+
+    		<div class="row justify-content-center mt-5">
+    			<div class="col-md-6 text-center ftco-animate">
+    				<p><a href="https://drive.google.com/file/d/1I4Lwzsil5ZlJWBoBYuoRlx77_hUrmTUV/view?usp=drive_link" class="btn btn-primary py-4 px-5">Download Resume </a></p>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+   
+
+    <section class="ftco-section" id="project-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Projects</h1>
+        
+          </div>
+        </div>
+        <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://tgmssystem.web.app/" class="block-20 zoom-effect" style="background-image: url('images/tgms.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://tgmssystem.web.app/">TGMS SYSTEM</a></h3>
+                <p class="color-white">• Engineered a centralized web application for student academic records, aiding teacher guides in student support.<br>
+
+					• Integrated youtube API for suggesting relevant videos according to faculty feedback.
+					</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://algovisualizr.web.app/" class="block-20 zoom-effect" style="background-image: url('images/algovisualizer.ico');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://algovisualizr.web.app/">ALGORITHM VISUALIZER</a></h3>
+                <p class="color-white">• Provides a detailed view of each step in the algorithm.<br>• Helps deepen understanding of algorithm operations through visual aids.
+					
+				</p>
+              </div>
+            </div>
+          </div>
+
+          
+		
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/aniketmhatre42/Customer-Segmentation-using-K-Means-Clustering-" class="block-20 zoom-effect" style="background-image: url('images/customer\ seg.png');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/aniketmhatre42/Customer-Segmentation-using-K-Means-Clustering-">Customer Segmentation using  K-Means Clustering model.</a></h3>
+				  <p class="color-white">• Developed a ML model to give various recommendations of financial products &amp; services on target customer groups.</p>
+				</div>
+			  </div>
+			</div>
+			
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 d-flex ftco-animate">
+						<div class="blog-entry justify-content-end">
+							<a href="https://todolistaniket.netlify.app/" class="block-20 zoom-effect" style="background-image: url('images/todo.jpeg');">
+							</a>
+							<div class="text mt-3 float-right d-block">
+								<h3 class="heading"><a href="https://todolistaniket.netlify.app/">TO DO LIST </a></h3>
+								<p class="color-white">• Easily create, edit, and track your daily tasks to stay organized and productive.<br>
+								• Intuitive interface that allows you to add, remove, and prioritize tasks with ease.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 d-flex ftco-animate">
+						<div class="blog-entry justify-content-end">
+							<a href="https://sentimentt-analysis.netlify.app/" class="block-20 zoom-effect" style="background-image: url('images/image.jpeg');">
+							</a>
+							<div class="text mt-3 float-right d-block">
+								<h3 class="heading"><a href="https://sentimentt-analysis.netlify.app/">SENTIMENT ANALYSIS</a></h3>
+								<p class="color-white">• The system assesses text sentiment by analyzing predefined positive and negative words and then categorizes the result as positive, negative, or neutral.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+            </div>
+          
+				
+		 </div>
+	  </div>
+    </section>
+
+
+	
+ <!-- Certificates Section -->
+<section id="certificates-section">
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Certificate 1 -->
+            <div class="col-md-4 mb-4 d-flex ftco-animate">
+                <div class="blog-entry justify-content-end">
+                    <a href="#certificate1" class="block-20 zoom-effect" style="background-image: url('images/Great\ Learning.jpg');" data-toggle="modal"></a>
+                    <div class="text mt-3 float-right d-block">
+                        <h3 class="heading"><a href="#certificate1" data-toggle="modal">Microsoft Azure Application</a></h3>
+                    </div>
+                </div>
+            </div>
+            <!-- Certificate 2 -->
+            <div class="col-md-4 mb-4 d-flex ftco-animate">
+                <div class="blog-entry justify-content-end">
+                    <a href="#certificate2" class="block-20 zoom-effect" style="background-image: url('images/Python Developer.jpg');" data-toggle="modal"></a>
+                    <div class="text mt-3 float-right d-block">
+                        <h3 class="heading"><a href="#certificate2" data-toggle="modal">Python Developer</a></h3>
+                    </div>
+                </div>
+            </div>
+            <!-- Certificate 3 -->
+            <div class="col-md-4 mb-4 d-flex ftco-animate">
+                <div class="blog-entry justify-content-end">
+                    <a href="#certificate3" class="block-20 zoom-effect" style="background-image: url('images/Web\ Development\ .jpg');" data-toggle="modal"></a>
+                    <div class="text mt-3 float-right d-block">
+                        <h3 class="heading"><a href="#certificate3" data-toggle="modal">Web Development</a></h3>
+                    </div>
+                </div>
+            </div>
+            <!-- Certificate 4 -->
+            <div class="col-md-4 mb-4 d-flex ftco-animate">
+                <div class="blog-entry justify-content-end">
+                    <a href="#certificate4" class="block-20 zoom-effect" style="background-image: url('images/Android Development.jpg');" data-toggle="modal"></a>
+                    <div class="text mt-3 float-right d-block">
+                        <h3 class="heading"><a href="#certificate4" data-toggle="modal">Android Development</a></h3>
+                    </div>
+                </div>
+            </div>
+            <!-- Certificate 5 -->
+            <div class="col-md-4 mb-4 d-flex ftco-animate">
+                <div class="blog-entry justify-content-end">
+                    <a href="#certificate5" class="block-20 zoom-effect" style="background-image: url('images/Solution Challenge.jpg');" data-toggle="modal"></a>
+                    <div class="text mt-3 float-right d-block">
+                        <h3 class="heading"><a href="#certificate5" data-toggle="modal">Solution Challenge</a></h3>
+                    </div>
+                </div>
+            </div>
+            <!-- Certificate 6 -->
+            <div class="col-md-4 mb-4 d-flex ftco-animate">
+                <div class="blog-entry justify-content-end">
+                    <a href="#certificate6" class="block-20 zoom-effect" style="background-image: url('images/AWS\ Certificate.png');" data-toggle="modal"></a>
+                    <div class="text mt-3 float-right d-block">
+                        <h3 class="heading"><a href="#certificate6" data-toggle="modal">AWS Essentials</a></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+	<!-- Contact Section -->
+
+		 
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+		<div class="container">
+			<div class="row justify-content-center mb-5 pb-3">
+				<div class="col-md-7 heading-section text-center ftco-animate">
+					<h1 class="big big-2 contact-heading">Contact</h1>
+					
+				</div>
+			</div>
+	
+			<div class="row d-flex contact-info mb-5 justify-content-center">
+				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+					<div class="align-self-stretch box p-4 text-center">
+						<div class="icon d-flex align-items-center justify-content-center">
+							<span class="icon-map-signs contact-icon"></span>
+						</div>
+						<h3 class="color-white">Address</h3>
+						<p class="color-white">Pale, Uran, Navi-Mumbai.</p>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+					<div class="align-self-stretch box p-4 text-center">
+						<div class="icon d-flex align-items-center justify-content-center">
+							<span class="icon-phone2 contact-icon"></span>
+						</div>
+						<h3 class="color-white">Contact Number</h3>
+						<p class="color-white"><a href="tel://0101010101">91+ 9594744670</a></p>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+					<div class="align-self-stretch box p-4 text-center">
+						<div class="icon d-flex align-items-center justify-content-center">
+							<span class="icon-paper-plane contact-icon"></span>
+						</div>
+						<h3 class="color-white">Email Address</h3>
+						<p class="color-white"><a href="mailto:aniket2002mhatre42@gmail.com">aniket2002mhatre42@gmail.com</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section >
+		<div class="" style="background-image: url(images/)">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-md-3 ftco-animate text-center">
+						<h2>
+							<i class="fab fa-github" style="background: linear-gradient(45deg, #333, #6e5494); 
+							-webkit-background-clip: text; 
+							-webkit-text-fill-color: transparent; 
+							display: inline-block; 
+							font-size: 3rem;"></i>
+						</h2>
+						<br>
+						<p><a href="https://github.com/aniketmhatre42" class="btn btn-primary py-3 px-5">GitHub</a></p>
+					</div>
+					
+					<div class="col-md-3 ftco-animate text-center">
+						<h2>
+							<i class="fab fa-linkedin" style="background: linear-gradient(45deg, #0077b5, #00a0dc); 
+							
+							-webkit-background-clip: text; 
+							-webkit-text-fill-color: transparent; 
+							display: inline-block; 
+							font-size: 3rem;"></i>
+						</h2>
+						<br>
+						<p><a href="https://www.linkedin.com/in/aniket-mhatre4242/" class="btn btn-primary py-3 px-5">LinkedIn</a></p>
+					</div>
+					
+					<div class="col-md-3 ftco-animate text-center">
+						<h2>
+							<i class="fab fa-instagram" style="background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4); 
+							-webkit-background-clip: text; 
+							-webkit-text-fill-color: transparent; 
+							display: inline-block; 
+							font-size: 3rem;"></i>
+						</h2>
+						<br>
+						<p><a href="https://www.instagram.com/anikettt__42/" class="btn btn-primary py-3 px-5">Instagram</a></p>
+					</div>
+					
+					<div class="col-md-3 ftco-animate text-center">
+						<h2>
+							<i class="fab fa-facebook-f" style="background: linear-gradient(45deg, #3b5998, #8b9dc3); 
+							-webkit-background-clip: text; 
+							-webkit-text-fill-color: transparent; 
+							display: inline-block; 
+							font-size: 3rem;"></i>
+						</h2>
+						<br>
+						<p><a href="https://www.facebook.com/profile.php?id=100069821269218&mibextid=ZbWKwL" class="btn btn-primary py-3 px-5">Facebook</a></p>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	  
+
+		  <div class="container">
+			<br>
+			<br>
+			<div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+				</div>
+			</div>
+				<br>
+				
+						
+					</ul>
+				<br>
+		   </div>
+   </div>
+ </section>
+
+
+ <!-- Certificate 1 Modal -->
+<div class="modal fade" id="certificate1" tabindex="-1" role="dialog" aria-labelledby="certificate1Label" aria-hidden="true">
+	<div class="modal-dialog modal-lg" role="document">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title" id="certificate1Label">Microsoft Azure Application</h5>
+		  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		  </button>
+		</div>
+		<div class="modal-body">
+		  <img src="images/Great Learning.jpg" class="img-fluid" alt="Certificate 1">
+		</div>
+	  </div>
+	</div>
+  </div>
+  
+  <!-- Certificate 2 Modal -->
+  <div class="modal fade" id="certificate2" tabindex="-1" role="dialog" aria-labelledby="certificate2Label" aria-hidden="true">
+	<div class="modal-dialog modal-lg" role="document">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title" id="certificate2Label">Certificate 2</h5>
+		  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		  </button>
+		</div>
+		<div class="modal-body">
+		  <img src="images/Python Developer.jpg" class="img-fluid" alt="Certificate 2">
+		</div>
+	  </div>
+	</div>
+  </div>
+  <!-- Certificate 3 Modal -->
+  <div class="modal fade" id="certificate3" tabindex="-1" role="dialog" aria-labelledby="certificate3Label" aria-hidden="true">
+	<div class="modal-dialog modal-lg" role="document">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title" id="certificate3Label">Web Development</h5>
+		  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		  </button>
+		</div>
+		<div class="modal-body">
+		  <img src="images/Web Development .jpg" class="img-fluid" alt="Certificate 3">
+		</div>
+	  </div>
+	</div>
+  </div>
+  <!-- Certificate 4 Modal -->
+  <div class="modal fade" id="certificate4" tabindex="-1" role="dialog" aria-labelledby="certificate4Label" aria-hidden="true">
+	<div class="modal-dialog modal-lg" role="document">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title" id="certificate4Label"></h5>
+		  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		  </button>
+		</div>
+		<div class="modal-body">
+		  <img src="images/Android Development.jpg" class="img-fluid" alt="Certificate 4">
+		</div>
+	  </div>
+	</div>
+  </div>
+  <!-- Certificate 5 Modal -->
+  <div class="modal fade" id="certificate5" tabindex="-1" role="dialog" aria-labelledby="certificate5Label" aria-hidden="true">
+	<div class="modal-dialog modal-lg" role="document">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title" id="certificate5Label">Solution Challenge</h5>
+		  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		  </button>
+		</div>
+		<div class="modal-body">
+		  <img src="images/Solution Challenge.jpg" class="img-fluid" alt="Certificate 5">
+		</div>
+	  </div>
+	</div>
+  </div>
+  <!-- Certificate 6 Modal -->
+  <div class="modal fade" id="certificate6" tabindex="-1" role="dialog" aria-labelledby="certificate6Label" aria-hidden="true">
+	<div class="modal-dialog modal-lg" role="document">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title" id="certificate6Label">Accenture Apprenticeship</h5>
+		  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		  </button>
+		</div>
+		<div class="modal-body">
+		  <img src="images/AWS Certificate.png" class="img-fluid" alt="Certificate 6">
+		</div>
+	  </div>
+	</div>
+  </div>
+  
+  
+  
+  
+  <!-- Include Bootstrap JavaScript and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+	
+    
+
+
+  <!-- loader -->
+  <!-- <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div> -->
+  
+  <script>
+	document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+	  anchor.addEventListener('click', function(e) {
+		e.preventDefault();
+  
+		document.querySelector(this.getAttribute('href')).scrollIntoView({
+		  behavior: 'smooth'
+		});
+	  });
+	});
+  </script>
+  
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+
+  <script>
+	var loader =document.getElementById("preloader");
+
+	window.addEventListener("load", function(){
+		setTimeout(function() {
+			loader.style.display="none";
+		}, 1500);
+	});
+  </script>
+    
+  </body>
+</html>
